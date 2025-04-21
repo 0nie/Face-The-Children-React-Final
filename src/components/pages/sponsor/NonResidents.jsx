@@ -48,7 +48,7 @@ const NonResidents = () => {
               </div>
             </div>
 
-            <div className="child-wrapper flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:justify-center">
+            <div className="child-wrapper flex flex-wrap flex-col gap-3 lg:flex-row lg:flex-wrap lg:justify-center">
               {nonresidents.map((item, index) => {
                 const percentage = parseFloat(item.sponsor);
                 return (

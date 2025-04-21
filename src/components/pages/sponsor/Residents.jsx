@@ -46,7 +46,7 @@ const Residents = () => {
               </Link>
             </div>
 
-            <div className="child-wrapper flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:justify-center">
+            <div className="child-wrapper flex flex-wrap flex-col gap-3 lg:flex-row lg:flex-wrap lg:justify-center">
               {data.map((item, index) => {
                 const percentage = parseFloat(item.sponsor.split(' ')[0]); // Extract percentage from the sponsor string
 
@@ -72,7 +72,7 @@ const Residents = () => {
                         className="absolute top-0 left-0 h-full bg-[#EB8500] z-10 transition-all duration-300"
                         style={{ width: `${percentage}%` }}
                       ></div>
-                      <span className="relative z-20 flex items-center justify-center h-full">
+                      <span className="relative z-20 flex items-center justify-start h-full px-[10px]">
                         {item.sponsor}
                       </span>
                     </div>
