@@ -31,27 +31,27 @@ const Form = () => {
 
                     <div className="input flex flex-col mb-6  relative">
                         <label htmlFor="" className='text-[12px] px-[4px] text-[#3e9bd0] absolute top-[-9px] left-[8px] bg-white'>Name</label>
-                        <input type="text" required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0]' />
+                        <input type="text" required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0] text-[12px] text-[#3a3b36]' />
                     </div>
 
                     <div className="input flex flex-col mb-6 relative">
                         <label htmlFor="" className='text-[12px] px-[4px] text-[#3e9bd0] absolute top-[-9px] left-[8px] bg-white'>Email</label>
-                        <input type='email' required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0]' />
+                        <input type='email' required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0] text-[12px] text-[#3a3b36]' />
                     </div>
 
                     <div className="input flex flex-col mb-6 relative">
                         <label htmlFor="" className='text-[12px] px-[4px] text-[#3e9bd0] absolute top-[-9px] left-[8px] bg-white'>Phone</label>
-                        <input type="tel" required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0]' />
+                        <input type="tel" required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0] text-[12px] text-[#3a3b36]' />
                     </div>
 
                     <div className="input flex flex-col mb-6 relative">
                         <label htmlFor="" className='text-[12px] px-[4px] text-[#3e9bd0] absolute top-[-9px] left-[8px] bg-white'>Subject</label>
-                        <input type="text" required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0]' />
+                        <input type="text" required className='border border-gray-300 rounded-lg p-[8px] h-[35px] outline-none focus:border-[#3e9bd0] text-[12px] text-[#3a3b36]' />
                     </div>
 
                     <div className="input flex flex-col relative">
                         <label htmlFor="" className='text-[12px] px-[4px] text-[#3e9bd0] absolute top-[-9px] left-[8px] bg-white'>Message</label>
-                        <textarea name="" id="" required className='border border-gray-300 rounded-lg p-[8px] resize-none h-[250px] outline-none focus:border-[#3e9bd0]'></textarea>
+                        <textarea name="" id="" required className='border border-gray-300 rounded-lg p-[8px] resize-none h-[250px] outline-none focus:border-[#3e9bd0] text-[12px] text-[#3a3b36]'></textarea>
                     </div>
                     
                     <div className="box w-[300px] h-[80px] border border-gray-300 py-3 px-3 flex items-center justify-between rounded-sm mt-[25px]">

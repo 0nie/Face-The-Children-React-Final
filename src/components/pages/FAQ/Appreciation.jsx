@@ -4,7 +4,7 @@ import Headings from '../../partials/Headings'
 const Appreciation = () => {
   return (
     <div>
-      <section className="appreciation mt-[335px] lg:mt-[110px]">
+      <section className="appreciation mt-[155px] lg:mt-[110px]">
         <div className="container max-w-[410px] px-[8px]  py-[40px] mx-auto m-0 lg:max-w-[1300px] lg:mx-auto lg:py-[80px]">
             <div className="appreciation-wrapper text-center lg:w-[624px] lg:mx-auto lg:h-[136px] ">
                 <Headings label ="EVERY GIFT COUNTS"/>

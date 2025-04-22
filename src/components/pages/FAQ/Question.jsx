@@ -13,7 +13,7 @@ const Question = () => {
 
   return (
     <div>
-      <section className="question mb-[220px] lg:mb-[25px]  bg-white pt-[150px]">
+      <section className="question mb-[100px] lg:mb-[25px] bg-white pt-[95px] lg:pt-[150px]">
         <div className="container max-w-[410px] px-[8px] py-14 mx-auto m-0 lg:max-w-[1300px] lg:mx-auto">
           <div className="question-wrapper text-center">
             <Headings label="YOUR QUESTIONS, OUR CLARITY" />
@@ -21,16 +21,17 @@ const Question = () => {
               Our Commitment to Child Development
             </h1>
 
-            <div className="card-question-wrapper lg:max-w-[1100px] lg:mx-auto ">
+            <div className="card-question-wrapper lg:max-w-[1100px] lg:mx-auto">
               {data.map((question, index) => (
-                <div className="card mb-[32px]   lg:flex lg:gap-[100px] lg:items-start lg:h-[45.6px] lg:mb-[32px]" key={index}>
+                <div className="card mb-[32px] lg:flex lg:gap-[100px] lg:items-start lg:h-[45.6px] lg:mb-[32px]" key={index}>
                   <div className={`card border h-auto p-[8px] flex items-center justify-between gap-5 rounded-md mb-[16px] cursor-pointer transition-all duration-300 hover:bg-[#3e9bd0] hover:text-white lg:w-[600px] lg:h-auto
                     ${activeIndex === index
                       ? 'border-[#3e9bd0] bg-white text-[#3e9bd0]'
                       : 'border-gray-200 text-[#3a3b36]'}`}
                     onClick={() => toggleAnswer(index)}
                   >
-                    <span className={`' text-[20px] font-semibold lg:text-[20px] ' ${activeIndex === index ? 'text-[#4791bc]' :'text-gray-400'}`}>{question.number}</span>
+                    <span className={`text-[20px] font-semibold lg:text-[20px] ${activeIndex === index ? '!text-[#3e9bd0]' : 'text-gray-400'}`}>{question.number}</span>
+
                     <p className='text-[14px] text-justify flex-1'>{question.question}</p>
 
                     {/* 🔁 Responsive icon */}
@@ -42,7 +43,7 @@ const Question = () => {
                   </div>
 
                   {activeIndex === index && (
-                    <div className="active border h-auto border-[#3e9bd0]  text-[#3a3b36] bg-gray-100 p-[12px] rounded-md lg:w-[400px]  lg:h-auto">
+                    <div className="active border h-auto border-[#3e9bd0] text-[#3a3b36] bg-gray-100 p-[12px] rounded-md lg:w-[400px]  lg:h-auto">
                       <p className='text-justify text-[14px]'>{question.answer}</p>
                     </div>
                   )}

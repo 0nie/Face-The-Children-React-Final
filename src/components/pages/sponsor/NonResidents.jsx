@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GoArrowRight } from 'react-icons/go';
 import { IoHome } from 'react-icons/io5';
 import { MdFamilyRestroom } from 'react-icons/md';
-import { motion, AnimatePresence } from 'framer-motion';
+import ModalSponsor from '../../partials/Modal/ModalSponsor'; // Import ModalSponsor
 import nonresidents from './nonresidents-data';
 import { Link } from 'react-router-dom';  // Import Link for navigation
 
@@ -85,109 +85,13 @@ const NonResidents = () => {
         </div>
       </section>
 
-      <AnimatePresence>
-        {isOpen && (
-          <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
-            <motion.div
-              initial={{ y: 300, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 300, opacity: 0 }}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="modal bg-white rounded-xl w-[400px] max-w-full shadow-lg"
-            >
-              <div className="modal-header flex items-center justify-between bg-[#3E9BD0] w-full h-[52px] p-[16px] rounded-t-xl">
-                <h2 className="text-[14px] font-bold text-white">Sponsor {selectedName}</h2>
-                <button onClick={closeModal} className="text-3xl text-white hover:text-black">
-                  &times;
-                </button>
-              </div>
-
-              <div className="selection px-[16px] bg-white pt-[25px]">
-                <form className="flex flex-col gap-[22px]">
-                  <div className="sponsor mb-[20px]">
-                    <p className="text-[14px] text-[#3A3B36] font-semibold">Choose amount</p>
-
-                    <div className="flex flex-wrap">
-                      <div className="label flex items-start mt-[20px] gap-[5px] w-[184px] h-[20px]">
-                        <input type="radio" />
-                        <label htmlFor="" className="text-[14px] text-[#3A3B36] px-[4px]">$20.00</label>
-                      </div>
-
-                      <div className="label flex items-start mt-[20px] gap-[5px] w-[184px] h-[20px]">
-                        <input type="radio" />
-                        <label htmlFor="" className="text-[14px] text-[#3A3B36] px-[4px]">$40.00</label>
-                      </div>
-
-                      <div className="label flex items-start mt-[20px] gap-[5px] w-[184px] h-[20px]">
-                        <input type="radio" />
-                        <label htmlFor="" className="text-[14px] text-[#3A3B36] px-[4px]">$50.00</label>
-                      </div>
-
-                      <div className="label flex items-start mt-[20px] gap-[5px] w-[184px] h-[20px]">
-                        <input type="radio" />
-                        <label htmlFor="" className="text-[14px] text-[#3A3B36] px-[4px]">$80.00</label>
-                      </div>
-
-                      <div className="label flex items-start mt-[20px] gap-[5px] w-[184px] h-[20px]">
-                        <input type="radio" />
-                        <label htmlFor="" className="text-[14px] text-[#3A3B36] px-[4px]">$100.00</label>
-                      </div>
-
-                      <div className="label flex items-start mt-[20px] gap-[5px] w-[184px] h-[20px]">
-                        <input type="radio" />
-                        <label htmlFor="" className="text-[14px] text-[#3A3B36] px-[4px]">$200.00</label>
-                      </div>
-
-                      <div className="label flex items-start mt-[20px] gap-[5px] w-[194px] h-[20px]">
-                        <input type="radio" />
-                        <label htmlFor="" className="text-[14px] text-[#3A3B36] px-[4px]">
-                          ${remainingAmount.toFixed(2)} to fully sponsor.
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="frequency relative">
-                    <p className="absolute top-[-9px] left-[8px] text-[12px] px-[4px] bg-white">
-                      *<span className="text-[#3E9BD0]">Frequency</span>
-                    </p>
-                    <select className="border border-gray-300 p-2 rounded-md w-full h-[35px]" required>
-                      <option>--</option>
-                      <option>One Time</option>
-                      <option>Monthly</option>
-                    </select>
-                  </div>
-
-                  <div className="amount relative">
-                    <label className="absolute top-[-9px] left-[8px] text-[12px] px-[4px] bg-white text-[#3E9BD0]">
-                      Remarks
-                    </label>
-                    <textarea type="email" className="w-full h-[112px] border border-gray-300 rounded-md resize-none p-[8px]" required />
-                  </div>
-
-                  <div className="amount relative">
-                    <label className="absolute top-[-9px] left-[8px] text-[12px] px-[4px] bg-white text-[#3E9BD0]">
-                      Email
-                    </label>
-                    <input type="email" className="w-full h-[35px] border border-gray-300 rounded-md" required />
-                  </div>
-
-                  <button className="text-[12px] bg-[#3E9BD0] py-[6px] px-[12px] text-white rounded-md mb-[20px]">
-                    Proceed
-                  </button>
-                </form>
-
-                <div className="mode-of-payment flex justify-end pb-[20px]">
-                  <div className="cards ">
-                    <span className="text-[10px] text-[#3A3B36]">Donate with your credit card.</span>
-                    <img src="/src/components/images/cards.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
+      {/* ModalSponsor Component */}
+      <ModalSponsor 
+        isOpen={isOpen} 
+        closeModal={closeModal} 
+        selectedResident={selectedName} 
+        remainingAmount={remainingAmount} 
+      />
     </div>
   );
 };

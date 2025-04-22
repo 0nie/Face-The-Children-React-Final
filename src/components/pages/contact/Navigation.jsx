@@ -16,17 +16,17 @@ const Navigation = () => {
   return (
     <div className="mb-14 bg-gray-100 shadow-sm fixed top-0 left-0 right-0 z-50">
       {/* Top Sub Nav */}
-      <section className="sub-nav bg-[#3e9bd0] text-white">
+      <section className="sub-nav bg-[#3e9bd0] text-white h-[26.53px] lg:h-[29.5px]">
         <div className="container mx-auto px-2 max-w-[410px] py-[5px] lg:max-w-[1300px] lg:py-[6px]">
-          <div className="flex justify-end gap-3 items-center">
-            <small className="text-[10px] font-light">Visit Philippine Frontline Ministries</small>
-            <small className="text-[10px] font-light">Login</small>
+          <div className="flex justify-end gap-5 items-center py-[1px]">
+            <small className="text-[11px] font-light">Visit Philippine Frontline Ministries</small>
+            <small className="text-[11px] font-light">Login</small>
           </div>
         </div>
       </section>
 
       {/* Main Nav */}
-      <section className="main-nav relative">
+      <section className="main-nav relative bg-[#FAFAFA]">
         <div className="container mx-auto max-w-[420px] p-2 lg:max-w-[1300px] lg:py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -45,7 +45,7 @@ const Navigation = () => {
               
               {/* Donate Button with Active Highlight */}
               <Link to="/donate" className={`${location.pathname === '/donate' ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]'} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex`}>
-                DONATE
+                Donate
               </Link>
             </nav>
 

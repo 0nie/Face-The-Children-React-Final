@@ -20,7 +20,7 @@ const Team = () => {
                     return(
                         <div className="card text-center" key={key}>
                             <img src={person.image}
-                             alt="" className='mx-auto mb-[20px]' />
+                             alt="team-image" className='mx-auto mb-[20px]' />
                             <h4 className="name text-[16px] text-[#3e9bd0] font-semibold" >{person.name}</h4>
                             <small className="occupation text-[11px] italic block text-[#3A3B36] mt-[4px] mb-[2px]">{person.occupation}</small>
                             <a href="#" className="email text-[12px] text-[#3e9bd0]">{person.email}</a>

@@ -6,7 +6,7 @@ import Home from "./components/pages/home/Home";
 import Sponsor from "./components/pages/sponsor/Sponsor";
 import Strategy from "./components/pages/strategy/Strategy";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import NotFound from "./components/pages/404/NotFound";
+import NotFound from "./components/partials/NotFound";
 
 // Import the nested routes for sponsor
 import Residents from './components/pages/sponsor/Residents';
