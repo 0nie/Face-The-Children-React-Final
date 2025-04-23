@@ -7,10 +7,10 @@ const BannerAbout = () => {
     <div>
       <section className="about pt-[100px] lg:pt-[150px]">
         <div className="container max-w-[410px] px-[8px] py-14 mx-auto sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[1300px]">
-          <div className="about-wrapper flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 xl:gap-16">
+          <div className="about-wrapper flex items-center flex-col gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 xl:gap-16">
             
             <img 
-              src="/src/components/images/about-banner.png" 
+              src="/public/images/about/about-banner.png" 
               alt="about-banner-image" 
               className="w-[398px] h-[398px] md:w-[450px] md:h-[450px] lg:w-[510px] lg:h-[510px]" 
             />

@@ -37,23 +37,24 @@ const ModalSponsor = ({ isOpen, closeModal, selectedResident, remainingAmount })
                           id={`amount${i}`}
                           name="amount"
                           className="hidden peer"/>
-                        <div className="w-[16px] h-[16px] border border-gray-400 rounded-full flex items-center justify-center peer-hover:bg-[rgb(252,152,39)] peer-checked:bg-[rgb(252,152,39)]">
-                          <FaCheck className="text-white text-[10px] hidden peer-checked:block" />
+                        <div className="w-[17px] h-[16px] border border-gray-400 rounded-full flex items-center justify-center peer-hover:bg-[rgb(252,152,39)] peer-checked:bg-[rgb(252,152,39)]">
+                          <FaCheck className="text-white text-[7px]" />
                         </div>
                         <span className="text-[14px] text-[#3A3B36] px-[4px]">${amount}</span>
+
                       </label>
                     ))}
 
                     <label
                       htmlFor="remaining"
-                      className="flex items-start gap-[8px] mt-[20px] w-[200px] h-[20px] cursor-pointer">
+                      className="flex items-start gap-[8px] mt-[20px] w-[220px] h-[20px] cursor-pointer">
                       <input
                         type="radio"
                         id="remaining"
                         name="amount"
                         className="hidden peer"/>
-                      <div className="w-[16px] h-[16px] border border-gray-400 rounded-full flex items-center justify-center peer-hover:bg-[rgb(252,152,39)] peer-checked:bg-[rgb(252,152,39)]">
-                        <FaCheck className="text-white text-[10px] hidden peer-checked:block" />
+                      <div className=" w-[16px] h-[16px] border border-gray-400 rounded-full flex items-center justify-center peer-hover:bg-[rgb(252,152,39)] peer-checked:bg-[rgb(252,152,39)]">
+                        <FaCheck className="text-white text-[7px]" />
                       </div>
                       <span className="text-[14px] text-[#3A3B36] px-[4px] w-[200px]">
                         ${remainingAmount.toFixed(2)} to fully sponsor.
@@ -95,7 +96,7 @@ const ModalSponsor = ({ isOpen, closeModal, selectedResident, remainingAmount })
               <div className="mode-of-payment flex justify-end pb-[20px]">
                 <div className="cards">
                   <span className="text-[10px] text-[#3A3B36]">Donate with your credit card.</span>
-                  <img src="/src/components/images/cards.png" alt="cards" />
+                  <img src="/src/components/images/modal/cards.png" alt="cards" />
                 </div>
               </div>
             </div>

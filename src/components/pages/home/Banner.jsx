@@ -1,16 +1,17 @@
 import React from 'react'
 import Headings from '../../partials/Headings'
 import Button from '../../partials/Button'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
   return (
     <div>
       <section className="banner">
         <div className="container px-4 max-w-[410px] mx-auto pb-4 pt-40 sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[1300px] lg:pt-[180px] xl:pt-[205px]">
-          <div className="banner-wrapper flex flex-col justify-between gap-10 lg:flex-row-reverse lg:items-center lg:gap-12 lg:justify-between">
+          <div className="banner-wrapper flex items-center flex-col justify-between gap-10 lg:flex-row-reverse lg:items-center lg:gap-12 lg:justify-between">
 
             <img
-              src="/src/components/images/h-banner.png"
+              src="/public/images/home/h-banner.png"
               alt="banner-image"
               className="w-[320px] h-[300px] sm:w-[360px] sm:h-[340px] lg:w-[480px] lg:h-[450px] xl:w-[573px] xl:h-[543px]"
             />
@@ -23,7 +24,9 @@ const Banner = () => {
                 </h1>
               </div>
 
-              <Button label="Sponsor Now" />
+              <Link to="/sponsor">
+                <Button label="Sponsor Now" />
+              </Link>
             </div>
 
           </div>

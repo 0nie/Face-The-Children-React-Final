@@ -10,7 +10,7 @@ const TheProblem = () => {
 
           {/* Image Section */}
           <img
-            src="/src/components/images/s-banner.png"
+            src="/public/images/strategy/s-banner.png"
             alt="Problem visual"
             className="w-[398.6px] h-[565px] lg:order-2 lg:w-[625px] lg:h-[886.9px] lg:ml-[20px]"
           />

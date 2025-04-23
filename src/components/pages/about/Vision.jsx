@@ -10,12 +10,12 @@ const Vision = () => {
                         sm:max-w-[640px] md:max-w-[768px] 
                         lg:max-w-[1100px] xl:max-w-[1300px]">
 
-          <div className="vision-wrapper flex flex-col gap-10 
+          <div className="vision-wrapper flex items-center flex-col gap-10 
                           lg:flex-row-reverse lg:items-center 
                           lg:justify-between lg:gap-12 xl:gap-16">
 
             <img 
-              src="/src/components/images/about-vision.png"
+              src="/public/images/about/about-vision.png"
               alt="vision-image"
               className="h-[398px] md:h-[450px] md:w-[450px] lg:h-[510px] lg:w-[510px]" 
             />

@@ -61,7 +61,7 @@ const Form = () => {
                         </div>
 
                         <div className="captcha flex flex-col items-center">
-                            <img src="/src/components/images/recapcha logo.png" className='w-[32px] h-[32px]' alt="" />
+                            <img src="/public/images/contact/recapcha logo.png" className='w-[32px] h-[32px]' alt="" />
                             <p className='text-[10px] text-[#555]'>reCAPTCHA</p>
                             <small className='text-[8px] text-[#555]'>Privacy - Terms</small>
                         </div>

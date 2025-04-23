@@ -15,7 +15,7 @@ const Team = () => {
                 <Header label="Our Dedicated Team"/>
             </div>
             
-            <div className="card-wrapper grid grid-cols-1 gap-5 mt-[32px] lg:mt-[37px] mb-[25px] lg:grid-cols-3 lg:max-w-[900px] lg:mx-auto">
+            <div className="card-wrapper grid grid-cols-1 gap-5 mt-[32px] lg:mt-[37px] mb-[25px] lg:grid-cols-2 xl:grid-cols-3 lg:max-w-[900px] lg:mx-auto">
                 {team.map((person, key) =>{
                     return(
                         <div className="card text-center" key={key}>

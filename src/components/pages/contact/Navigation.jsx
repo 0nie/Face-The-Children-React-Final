@@ -10,15 +10,15 @@ const Navigation = () => {
 
   const getLinkClass = (path, custom = '') => {
     const isActive = location.pathname === path;
-    return `${custom} text-[#3a3b36] text-[15px] lg:font-light hover:text-[#fb9f30] ${isActive ? 'text-[#fb9f30]' : ''}`;
+    return `${custom} text-[#3a3b36] text-[15px] font-medium lg:font-light hover:text-[#fb9f30] ${isActive ? 'text-[#fb9f30]' : ''}`;
   };
 
   return (
     <div className="mb-14 bg-gray-100 shadow-sm fixed top-0 left-0 right-0 z-50">
       {/* Top Sub Nav */}
       <section className="sub-nav bg-[#3e9bd0] text-white h-[26.53px] lg:h-[29.5px]">
-        <div className="container mx-auto px-2 max-w-[410px] py-[5px] lg:max-w-[1300px] lg:py-[6px]">
-          <div className="flex justify-end gap-5 items-center py-[1px]">
+        <div className="container mx-auto px-2 max-w-[420px] py-[5px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[1300px] lg:py-[6px]">
+          <div className="flex justify-end gap-4 items-center py-[1px]">
             <small className="text-[11px] font-light">Visit Philippine Frontline Ministries</small>
             <small className="text-[11px] font-light">Login</small>
           </div>
@@ -26,25 +26,28 @@ const Navigation = () => {
       </section>
 
       {/* Main Nav */}
-      <section className="main-nav relative bg-[#FAFAFA]">
-        <div className="container mx-auto max-w-[420px] p-2 lg:max-w-[1300px] lg:py-4">
+      <section className="main-nav relative bg-[#FAFAFA] lg:h-[69px]">
+        <div className="container mx-auto max-w-[420px] p-2 sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[1300px] lg:py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="logo">
-              <img src="/src/components/images/ftc_svg_logo.svg" alt="Logo" />
+            <div className="logo w-[130px] md:w-[150px] lg:w-[220px]">
+              <img src="/public/images/navigation/ftc_svg_logo.svg" alt="Logo" className="w-full h-auto" />
             </div>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex gap-[25px] items-center">
+            <nav className="hidden lg:flex gap-5 xl:gap-[25px] items-center">
               <Link to="/" className={getLinkClass('/')}>Home</Link>
               <Link to="/about" className={getLinkClass('/about')}>About</Link>
               <Link to="/faq" className={getLinkClass('/faq')}>FAQ</Link>
               <Link to="/strategy" className={getLinkClass('/strategy')}>Strategy</Link>
               <Link to="/contactForm" className={getLinkClass('/contactForm')}>Contact</Link>
               <Link to="/sponsor" className={getLinkClass('/sponsor')}>Sponsor Child</Link>
-              
-              {/* Donate Button with Active Highlight */}
-              <Link to="/donate" className={`${location.pathname === '/donate' ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]'} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex`}>
+
+              {/* Donate Button */}
+              <Link
+                to="/donate"
+                className={`${location.pathname === '/donate' ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]'} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex`}
+              >
                 Donate
               </Link>
             </nav>

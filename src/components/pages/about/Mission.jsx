@@ -10,12 +10,12 @@ const Mission = () => {
                         sm:max-w-[640px] md:max-w-[768px] 
                         lg:max-w-[1100px] xl:max-w-[1300px]">
 
-          <div className="mission-wrap flex flex-col gap-10 
+          <div className="mission-wrap items-center flex flex-col gap-10 
                           lg:flex-row lg:items-center 
                           lg:justify-between lg:gap-10 xl:gap-10">
 
             <img 
-              src="/src/components/images/about-mission.png" 
+              src="/public/images/about/about-mission.png" 
               alt="mission-image" 
               className="h-[398px] md:h-[450px] md:w-[450px] lg:h-[510px] lg:w-[510px]"
             />

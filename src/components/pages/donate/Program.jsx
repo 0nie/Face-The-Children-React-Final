@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { MdOutlineArrowCircleRight } from 'react-icons/md'
 import data from './program-data'
 import ModalDonor from '../../partials/Modal/ModalDonor'
+import { Link } from 'react-router-dom'
 
 const Program = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,7 +25,7 @@ const Program = () => {
       <section className="program my-[130px]">
         <div className="container max-w-[410px] px-[8px] py-[40px] mx-auto m-0 lg:max-w-[850px] lg:mx-auto lg:py-[80px]">
 
-          <div className="program-wrapper flex justify-center flex-col items-center lg:flex-row lg:justify-center gap-3 lg:gap-3">
+          <div className="program-wrapper flex justify-center lg:flex-wrap flex-col items-center lg:flex-row lg:justify-center gap-3 lg:gap-3">
             {data.map((item, index) => (
               <div className="card mx-auto lg:w-[270px] lg:h-[620px]" key={index}>
                 <img src={item.image} alt="program-image" className="mx-auto w-[265px] h-[360px]" />
@@ -33,10 +34,13 @@ const Program = () => {
                   <p className="text-[12px] text-[#3A3B36] lg:text-left lg:h-[78px] lg:mb-0 lg:leading-5 mb-[20px]">
                     {item.description.split(' ').slice(0, 20).join(' ') + '...'}
                   </p>
-                  <a href="#" className="inline-flex items-center text-[#FC9827] gap-2 my-[20px]">
+
+                  {/* Use the link property to navigate to the correct page */}
+                  <Link to={item.link} className="inline-flex items-center text-[#FC9827] gap-2 my-[20px]">
                     <MdOutlineArrowCircleRight className="w-[20px] h-[20px]" />
                     Read More
-                  </a>
+                  </Link>
+
                   <button
                     onClick={openModal}
                     className="text-white text-[12px] bg-[#3E9BD0] py-[8px] px-[16px] rounded-md w-[130px] h-[35.5px] block"

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from '../../partials/Button';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
@@ -9,8 +8,19 @@ const Navigation = () => {
   const toggleMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const getLinkClass = (path, custom = '') => {
-    const isActive = location.pathname === path;
+    const isActive =
+      (path === '/' && location.pathname === '/') ||
+      (path !== '/' && (
+        location.pathname === path ||
+        location.pathname.startsWith(path)
+      ));
     return `${custom} text-[#3a3b36] text-[15px] font-medium lg:font-light hover:text-[#fb9f30] ${isActive ? 'text-[#fb9f30]' : ''}`;
+  };
+
+  const getDonateButtonClass = () => {
+    // Only highlight Donate button if on one of the donation-related pages
+    const donationPages = ['/donate', '/general-donation', '/feeding-program', '/children'];
+    return donationPages.some(page => location.pathname.startsWith(page)) ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]';
   };
 
   return (
@@ -30,8 +40,8 @@ const Navigation = () => {
         <div className="container mx-auto max-w-[420px] p-2 sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[1300px] lg:py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="logo w-[130px] md:w-[150px] lg:w-[220px]">
-              <img src="/src/components/images/ftc_svg_logo.svg" alt="Logo" className="w-full h-auto" />
+            <div className="logo w-[220px] h-[39px] md:w-[150px] lg:w-[220px]">
+              <img src="/public/images/navigation/ftc_svg_logo.svg" alt="Logo" className="w-full h-auto" />
             </div>
 
             {/* Desktop Nav */}
@@ -46,7 +56,7 @@ const Navigation = () => {
               {/* Donate Button */}
               <Link
                 to="/donate"
-                className={`${location.pathname === '/donate' ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]'} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex`}
+                className={`${getDonateButtonClass()} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex`}
               >
                 Donate
               </Link>
@@ -71,7 +81,7 @@ const Navigation = () => {
             <li><Link to="/contactForm" className={getLinkClass('/contactForm')}>CONTACT</Link></li>
             <li><Link to="/sponsor" className={getLinkClass('/sponsor')}>SPONSOR CHILD</Link></li>
             <li>
-              <Link to="/donate" className={`${location.pathname === '/donate' ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]'} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex justify-center`}>
+              <Link to="/donate" className={`${getDonateButtonClass()} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex justify-center`}>
                 DONATE
               </Link>
             </li>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../../partials/Button';
 import { Link, useLocation } from 'react-router-dom';
 
+
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -9,9 +10,24 @@ const Navigation = () => {
   const toggleMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const getLinkClass = (path, custom = '') => {
-    const isActive = location.pathname === path;
-    return `${custom} text-[#3a3b36] text-[15px] font-medium lg:font-light hover:text-[#fb9f30] ${isActive ? 'text-[#fb9f30]' : ''}`;
-  };
+  const pathname = location.pathname;
+
+  // Custom rule for Sponsor Child: active on both /sponsor and /system
+  if (path === '/sponsor' && (pathname.startsWith('/sponsor') || pathname.startsWith('/system'))) {
+    return `${custom} text-[#3a3b36] text-[15px] font-medium lg:font-light hover:text-[#fb9f30] text-[#fb9f30]`;
+  }
+
+  const isActive = path === '/'
+    ? pathname === '/'
+    : pathname.startsWith(path);
+
+  return `${custom} text-[#3a3b36] text-[15px] font-medium lg:font-light hover:text-[#fb9f30] ${
+    isActive ? 'text-[#fb9f30]' : ''
+  }`;
+};
+
+
+
 
   return (
     <div className="mb-14 bg-gray-100 shadow-sm fixed top-0 left-0 right-0 z-50">
@@ -30,8 +46,8 @@ const Navigation = () => {
         <div className="container mx-auto max-w-[420px] p-2 sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[1300px] lg:py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="logo w-[130px] md:w-[150px] lg:w-[220px]">
-              <img src="/src/components/images/ftc_svg_logo.svg" alt="Logo" className="w-full h-auto" />
+            <div className="logo w-[220px] h-[39px] md:w-[150px] lg:w-[220px]">
+              <img src="/public/images/navigation/ftc_svg_logo.svg" alt="Logo" className="w-full h-auto" />
             </div>
 
             {/* Desktop Nav */}
@@ -46,7 +62,7 @@ const Navigation = () => {
               {/* Donate Button */}
               <Link
                 to="/donate"
-                className={`${location.pathname === '/donate' ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]'} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex`}
+                className={`${location.pathname === '/donate'  ? 'bg-[#fb9f30]' : 'bg-[#3e9bd0]'} text-white text-[12px] py-[8px] px-[16px] rounded-[8px] inline-flex`}
               >
                 Donate
               </Link>

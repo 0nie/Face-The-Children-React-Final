@@ -31,7 +31,7 @@ const Navigation = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="logo w-[130px] md:w-[150px] lg:w-[220px]">
-              <img src="/src/components/images/ftc_svg_logo.svg" alt="Logo" className="w-full h-auto" />
+              <img src="/public/images/navigation/ftc_svg_logo.svg" alt="Logo" className="w-full h-auto" />
             </div>
 
             {/* Desktop Nav */}
