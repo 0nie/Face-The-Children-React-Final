@@ -41,12 +41,21 @@ const Program = () => {
                     Read More
                   </Link>
 
+                {index === 0 ? (
+                  <Link
+                    to="/sponsor"
+                    className="text-white text-[12px] bg-[#3E9BD0] py-[8px] px-[16px] rounded-md w-[130px] h-[35.5px] block text-center">
+                    Donate Now
+                  </Link>) 
+                  : (
                   <button
                     onClick={openModal}
                     className="text-white text-[12px] bg-[#3E9BD0] py-[8px] px-[16px] rounded-md w-[130px] h-[35.5px] block"
                   >
                     Donate Now
                   </button>
+                  )}
+
                 </div>
               </div>
             ))}
