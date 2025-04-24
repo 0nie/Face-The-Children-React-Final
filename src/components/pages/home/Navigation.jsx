@@ -20,7 +20,9 @@ const Navigation = () => {
         <div className="container mx-auto px-2 max-w-[420px] py-[5px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[1300px] lg:py-[6px]">
           <div className="flex justify-end gap-4 items-center py-[1px]">
             <small className="text-[11px] font-light">Visit Philippine Frontline Ministries</small>
-            <small className="text-[11px] font-light">Login</small>
+            <Link to="/login">
+              <small className="text-[11px] font-light">Login</small>
+            </Link>
           </div>
         </div>
       </section>

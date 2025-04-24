@@ -56,9 +56,13 @@ const Residents = () => {
                         <div className="name-info">
                           <p className="text-white">{item.name}</p>
                          
-                          <Link to= "/system" >
-                             <p className="text-sm text-[#FC9827]">View Info</p>
+                          <Link to={`/system/${item.name}`} >
+                            <p className="text-sm text-[#FC9827]">View Info</p>
                           </Link>
+
+                          
+
+
                         </div>
                         <button
                           onClick={() => openModal(item.name, percentage)}

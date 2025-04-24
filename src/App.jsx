@@ -14,6 +14,9 @@ import FeedingProgram from "./components/pages/donate/FeedingProgram";
 import Sponsorship from "./components/pages/donate/Children";
 import Children from "./components/pages/donate/Children";
 import System from "./components/pages/sponsor/System";
+import LoginPage from "./components/pages/access/LoginPage";
+import UserCreateAccount from "./components/pages/access/UserCreateAccount";
+import UserForgotPassword from "./components/pages/access/UserForgotPassword";
 
 function App() {
   return (
@@ -29,12 +32,20 @@ function App() {
         <Route path="/feeding-program" element={<FeedingProgram />} />
         <Route path="/children" element={<Children />} />
         <Route path="/system" element={<System />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/create" element={<UserCreateAccount />} />
+        <Route path="/forgot" element={<UserForgotPassword />} />
+
 
         <Route path="/sponsor" element={<Sponsor />}>
           <Route index element={<Residents />} />
           <Route path="resident" element={<Residents />} />
           <Route path="non-resident" element={<NonResidents />} />
         </Route>
+
+        <Route path="/system/:childName" element={<System />} />
+
+
 
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -58,7 +58,10 @@ const NonResidents = () => {
                       <div className="info flex justify-between items-center mx-auto p-2 w-[265px] bg-[#3A3B364D] absolute left-[65px] lg:left-0 top-[302px] h-[58px]">
                         <div className="name-info">
                           <p className="text-white">{item.name}</p>
-                          <p className="text-sm text-[#FC9827]">View Info</p>
+                          <Link to={`/system/${item.name}`} >
+                            <p className="text-sm text-[#FC9827]">View Info</p>
+                          </Link>     
+
                         </div>
                         <button
                           onClick={() => openModal(item.name, percentage)}
