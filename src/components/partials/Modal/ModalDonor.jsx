@@ -69,7 +69,7 @@ const ModalDonor = ({ closeModal, isClosing }) => {
                   <input type="email" className="w-full h-[35px] border border-gray-300 rounded-md text-[12px] text-[#3A3B36]" required />
                 </div>
 
-                <button className="text-[12px] bg-[#3E9BD0] py-[6px] px-[12px] text-white rounded-md mb-[20px] lg:h-[33.5px]">
+                <button className="text-[12px] bg-[#3E9BD0] py-[6px] px-[12px] h-[33.5px] text-white rounded-md mb-[20px] lg:h-[33.5px]">
                   Proceed
                 </button>
               </form>

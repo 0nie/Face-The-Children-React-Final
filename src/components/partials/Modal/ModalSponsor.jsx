@@ -96,7 +96,7 @@ const ModalSponsor = ({ isOpen, closeModal, selectedResident, remainingAmount })
               <div className="mode-of-payment flex justify-end pb-[20px]">
                 <div className="cards">
                   <span className="text-[10px] text-[#3A3B36]">Donate with your credit card.</span>
-                  <img src="/src/components/images/modal/cards.png" alt="cards" />
+                  <img src="/images/modal/cards.png" alt="cards" />
                 </div>
               </div>
             </div>

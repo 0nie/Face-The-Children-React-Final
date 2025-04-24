@@ -9,7 +9,7 @@ const Care = () => {
 
         <div className="care-wrapper grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-[40px]">
 
-            <img src="/public/images/strategy/s-love.png" alt="care-image" className='mx-auto lg:ml-[20px] xl:mx-auto' />
+            <img src="/images/strategy/s-love.png" alt="care-image" className='mx-auto lg:ml-[20px] xl:mx-auto' />
 
             <div className="description">
                 <small className='text-[12px] text-[#FC9827]'>PREVAILS FOREVER</small>

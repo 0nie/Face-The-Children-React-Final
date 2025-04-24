@@ -15,7 +15,7 @@ const Mission = () => {
                           lg:justify-between lg:gap-10 xl:gap-10">
 
             <img 
-              src="/public/images/about/about-mission.png" 
+              src="/images/about/about-mission.png" 
               alt="mission-image" 
               className="h-[398px] md:h-[450px] md:w-[450px] lg:h-[510px] lg:w-[510px]"
             />

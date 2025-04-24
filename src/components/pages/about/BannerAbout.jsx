@@ -10,7 +10,7 @@ const BannerAbout = () => {
           <div className="about-wrapper flex items-center flex-col gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 xl:gap-16">
             
             <img 
-              src="/public/images/about/about-banner.png" 
+              src="/images/about/about-banner.png" 
               alt="about-banner-image" 
               className="w-[398px] h-[398px] md:w-[450px] md:h-[450px] lg:w-[510px] lg:h-[510px]" 
             />

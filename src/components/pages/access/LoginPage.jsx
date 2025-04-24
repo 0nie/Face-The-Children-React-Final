@@ -13,7 +13,9 @@ const LoginPage = () => {
                     <div className="w-96 p-6 lg:pt-[68px] xl:pt-[71px]">
 
                         <div className="image-container flex justify-center items-center flex-col">
-                            <img src="/public/images/navigation/ftc_svg_logo.svg" alt="" className='w-[300px] h-[89px]' />
+                            <Link to="/">
+                                <img src="/images/navigation/ftc_svg_logo.svg" alt="" className='w-[300px] h-[89px]' />
+                            </Link>
                         </div>
 
                         <p className='mt-8 mb-5 text-lg font-semibold text-[#3A3B36]'>LOGIN</p>

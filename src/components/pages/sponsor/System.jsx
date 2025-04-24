@@ -48,10 +48,10 @@ const System = () => {
     <div>
       <Navigation />
       <section className="sponsorship-children">
-        <div className="container px-4 max-w-[410px] mx-auto pb-4 pt-[150px] lg:pt-[150px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[990px] xl:p-0 xl:pt-[150px]">
+        <div className="container px-2 max-w-[410px] mx-auto pb-4 pt-[150px] lg:pt-[150px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[990px] xl:p-0 xl:pt-[150px]">
           <div className="children-wrapper lg:flex lg:gap-5">
             <div className="image-container flex flex-col items-center justify-center">
-              <img src={child.image} alt={child.name} className="object-cover w-[365px] h-[360px]" />
+              <img src={child.image} alt={child.name} className="object-cover w-[265px] lg:w-[365px] h-[360px]" />
               <div className="relative w-[265px] h-[40px] mx-auto text-white bg-[#FFBD66] text-[16px] font-semibold overflow-hidden">
                 <div
                   className="absolute top-0 left-0 h-full bg-[#EB8500] z-10 transition-all duration-300"
@@ -65,8 +65,8 @@ const System = () => {
 
             <div className="description">
               <div className="name pt-[30px] pb-[10px] mb-[10px] text-[16px] text-[#3A3B36] font-semibold border-b border-gray-100"><p>{child.name}</p></div>
-              <div className="age text-[14px] text-[#3A3B36] mb-[4px]"><p>Age: {child.age}</p></div>
-              <div className="birthdate age text-[14px] text-[#3A3B36] mb-[4px]"><p>Birthday: {child.birthday}</p></div>
+              <div className="age text-[14px] text-[#3A3B36] mb-[4px]"><p> <span className='mr-[8px]'>Age:</span> {child.age}</p></div>
+              <div className="birthdate age text-[14px] text-[#3A3B36] mb-[4px]"><p><span className='mr-[8px]'>Birthday:</span> {child.birthday}</p></div>
 
               <div className="story">
                 <h3 className='my-[20px] text-[16px] text-[#3A3B36] font-semibold'>My Story</h3>

@@ -12,8 +12,9 @@ const UserForgotPassword = () => {
                 <div className="w-96 p-6">
 
                     <div className="image-container flex items-center justify-center ">
-                        <img src="/public/images/navigation/ftc_svg_logo.svg" alt="ftc_logo"
-                        className='w-[300px] h-[89px]' />
+                       <Link to="/">
+                          <img src="/images/navigation/ftc_svg_logo.svg" alt="" className='w-[300px] h-[89px]' />
+                        </Link>
                     </div>
 
                     <p className='text-[18px] text-[#3A3B36] mt-[32px] mb-[20px] font-semibold'>FORGOT PASSWORD</p>

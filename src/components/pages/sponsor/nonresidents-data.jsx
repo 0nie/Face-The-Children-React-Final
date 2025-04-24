@@ -1,6 +1,6 @@
 const nonresidents = [
     {
-        image: "/public/images/sponsor/trixie.jpg",
+        image: "/images/sponsor/trixie.jpg",
         name: "Trixie Mae N",
         sponsor: "37.50% - Sponsored",
         age : "12",
@@ -8,7 +8,7 @@ const nonresidents = [
         story : "She came to Face the Children with her older sister, Rose Mae. She is from a poverty stricken area of Manila. Due to the many stresses of poverty, her mother left after she was born. Trixie ended up daily facing the dangers of neglect and abandonment on the streets with her sister.Through the interaction of a Frontline missionary and the Social Services, FTC was able to bring Trixie into full time care and protection. She has now received medical care, and the protective love of caring overseers. In only one year her health improvements have been incredibly encouraging!",
     },
     {
-        image: "/public/images/sponsor/danica.jpg",
+        image: "/images/sponsor/danica.jpg",
         name: "Danica V",
         sponsor: "40.00% - Sponsored",
          age : "20",
@@ -16,7 +16,7 @@ const nonresidents = [
         story : "Danica entered into the FTC program with two sisters and cousins in 2012. They had all been roaming streets each day looking for money and food to survive on. Before I only knew how to beg on the streets and I never went to school. But thanks to the FTC workers, who care about us, I now have hope for a good future. I enjoy singing, playing with toys, and watching movies. Danica is enrolled at the Frontline Christian Academy.",
     },
     {
-        image: "/public/images/sponsor/rosemae.jpg",
+        image: "/images/sponsor/rosemae.jpg",
         name: "Rose Mae N",
         sponsor: "40.00% - Sponsored",
          age : "22",
@@ -24,7 +24,7 @@ const nonresidents = [
         story : "My name is Rose Mae. I am here at Face the Children with my sister Trixie. My family is from a very poor area in Manila. Due to the many stresses of poverty, my mom left after my sister was born. The missionaries of Frontline found my sister and I in Manila, and they helped us come to this safe and blessed place. I am so thankful for Frontline! In the first year here I finally experienced schooling, and now I am enrolled and studying at Frontline Christian Academy!I know God rescued my sister and I for a reason and that He has big plans for our lives.",
     },
     {
-        image: "/public/images/sponsor/opt-rachelle.jpg",
+        image: "/images/sponsor/opt-rachelle.jpg",
         name: "Rachelle M",
         sponsor: "42.00% - Sponsored",
          age : "19",
@@ -32,7 +32,7 @@ const nonresidents = [
         story : "My name is Rachelle. Before I was even 2 years old, my brother and I were noticed on the streets with my Dad. I was very small, very sick, and needed help. The Frontline missionaries helped us. I was put in the hospital to get better, and when I was released, the government social services allowed my brother and I to go to Face the Children. I am now attending at the Frontline Christian Academy. They have taught me to be good, to behave, and to read, write and speak english. I can only see out of one eye, because of malnourishment when I was younger, but the doctors say my other eye is fine and I am thankful for God bringing me to FTC. I always enjoy when visitors come here to FTC. The thing I enjoy the most is playing games and eating!",
     },
     {
-        image: "/public/images/sponsor/opt-don.jpg",
+        image: "/images/sponsor/opt-don.jpg",
         name: "Richard T",
         sponsor: "45.00% - Sponsored",
          age : "19",
@@ -40,7 +40,7 @@ const nonresidents = [
         story : "Richard (aka Donny) comes from a broken home. After being neglected completely by his mother, his father was forced to leave the area, abandoning Donny in the aftermath. He was brought to us by the local Social Services. He is a great young boy full of energy, love, and kindness. He has been with us for around a year. He loves to play basketball and is working hard to catch up on his education.",
     },
     {
-        image: "/public/images/sponsor/marygrace.jpg",
+        image: "/images/sponsor/marygrace.jpg",
         name: "Mary Grace V",
         sponsor: "50.00% — Sponsored",
          age : "22",
@@ -48,7 +48,7 @@ const nonresidents = [
         story : "came to the FTC with my two sisters, Danica and Mary Ann. I am now attending School at the Frontline Christian Academy. Before I came to FTC I was always begging for money every night in the town. When I get some money we would buy food. One day we were noticed by some missionaries, who saw us begging, and they began to help us. Eventually, we were allowed to come to the FTC. Now I am not begging, and not saying curse words. God is working in my life, and I am learning about Him everyday. There are no bad memories or experiences here! And I am so happy now that I can eat properly and begin my education. I enjoy singing and playing with the other kids here.",
     },
     {
-        image: "/public/images/sponsor/eugene.jpg",
+        image: "/images/sponsor/eugene.jpg",
         name: "Eugene Lance D",
         sponsor: "52.50% - Sponsored",
          age : "32",
@@ -56,7 +56,7 @@ const nonresidents = [
         story : "*Note: this is a special sponsorship which also funds an individual cretaker for Eugene. Eugene had a Pediactric Assesment as was diagnosed that his site would not return, and that he has slight autism. Eugene was severely neglected during his primary years and, before coming to Face the Children, he was never taught to properly communicate or take care of himself Eugene \"LanLan\" Diaz was born to Leona, his mother who was a victim of abandonment. As her younger sister says, Leona never received anything from that man, no letters, nothing, nothing. After a long time Leona met another man, got married, and was blessed with a baby girl. But in 1998, a tragic incident happen when Leona was stabbed to death by a drug addicted man. After this incident Leona\'s husband left, leaving Lanlan, who was then 3 years old, in the care of a distant relative. However, due to poverty, this became a serious problem between the new guardian couple. Lanlan was an \"added burden,\" and became the subject of quarrels. Later, Lanlan was transferred to a living quarters unsuitable for humans, in the middle of a small field. He was not tended to properly, not fed well or regularly, and endured years of deprivation and aloneness. He became sickly and malnourished, and this may have been the cause of his total blindness. In 2006 Frontline staff became aware of LanLan, and in only a matter of days acquirred custody of him. Since then he has grown, developed, and undergone several surguries to repair problems in his digestive system. Though he is healthier now, and can still learn, much time was lost in formative years, and his blindness has been diagnosed as irreversible.",
     },
     {
-        image: "/public/images/sponsor/opt-gladays.jpg",
+        image: "/images/sponsor/opt-gladays.jpg",
         name: "Gladys T",
         sponsor: "57.50% - Sponsored",
          age : "19",
@@ -64,7 +64,7 @@ const nonresidents = [
         story : "She has been in Face the Children since May of 2013. She comes from a broken family and has never known her father. Gladys is joined in FTC with her brother Christopher. They met Frontline and FTC at the regular feeding program in the town. Gladys is enrolled at the Frontline Christian Academy, and loves learning and playing with her classmates!",
     },
     {
-        image: "/public/images/sponsor/julieann.jpg",
+        image: "/images/sponsor/julieann.jpg",
         name: "Julie ann",  // Corrected name field
         sponsor: "60.00% - Sponsored",  // Corrected sponsor field
          age : "24",
@@ -72,7 +72,7 @@ const nonresidents = [
         story : "My name is Julie Ann. I have been at the FTC for many years. I enjoy the swings, sliding, and trampoline, and also playing touchball and chinese garter. I am beginning to learn basic school. Before I came to FTC I would gather vegetables and fetch water. But then Kuya Jeff Rice came to where we lived, and in time he brought my sister and brother to FTC.Life here at FTC is very good and I get to know the Lord. I am learning many of the stories about the Lord. I am attending school at the Frontline Christian Academy. I am learning so many things at FTC.",
     },
     {
-        image: "/public/images/sponsor/opt-mark.jpg",
+        image: "/images/sponsor/opt-mark.jpg",
         name: "Mark John B",
         sponsor: "85.00% - Sponsored",
          age : "17",
@@ -80,7 +80,7 @@ const nonresidents = [
         story : "I am Mark John and have been at the Face the Children for almost my entire life. I love playing games with my friends, and sometimes listening to music.I am attending school at the Frontline Christian Academy. I am happy that FTC helped us, my mom and 3 sisters, escape from the hard street life of Ermita, Manila, where there is always fighting and danger.Thank you to everyone who is helping us!",
     },
     {
-        image: "/public/images/sponsor/opt-marian.jpg",
+        image: "/images/sponsor/opt-marian.jpg",
         name: "Marian Nhicole B",
         sponsor: "100.00% - Sponsored",
          age : "22",

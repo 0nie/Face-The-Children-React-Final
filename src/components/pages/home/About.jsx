@@ -12,7 +12,7 @@ const About = () => {
             
             {/* Responsive Image */}
             <img
-              src="/public/images/home/about.png"
+              src="/images/home/about.png"
               className="w-full max-w-[400px] h-auto md:max-w-[420px] lg:max-w-[440px] xl:max-w-[452px] xl:h-[445px]"
               alt="banner-image"
             />

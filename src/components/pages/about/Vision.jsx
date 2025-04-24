@@ -15,7 +15,7 @@ const Vision = () => {
                           lg:justify-between lg:gap-12 xl:gap-16">
 
             <img 
-              src="/public/images/about/about-vision.png"
+              src="/images/about/about-vision.png"
               alt="vision-image"
               className="h-[398px] md:h-[450px] md:w-[450px] lg:h-[510px] lg:w-[510px]" 
             />

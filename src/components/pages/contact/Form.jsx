@@ -16,7 +16,7 @@ const Form = () => {
                 <p className='text-[14px] text-[#3a3b36] mt-[16px] mb-[40px] text-balance leading-7'>We believe in building strong relationships and fostering a sense of community. Your feedback and inquiries are important to us, and we strive to respond as quickly and thoroughly as possible.</p>
                 <p className='text-[14px] text-[#3a3b36] mb-[12px]'>Feel free to get in touch with us via phone</p>
                 
-                <div className="flex flex-col lg:flex-row gap-[20px]">
+                <div className="flex flex-col lg:flex-row ">
                     <p className='text-[14px] text-[#3E9BD0] font-semibold'>Philippines: +63 927 420 3409</p>
                     <p className='text-[14px] text-[#3E9BD0] font-semibold mb-[40px]'>USA +815 797 9177</p>
                 </div>

@@ -10,13 +10,13 @@ const TheProblem = () => {
 
           {/* Image Section */}
           <img
-            src="/public/images/strategy/s-banner.png"
+            src="/images/strategy/s-banner.png"
             alt="Problem visual"
             className="w-[398.6px] h-[565px] lg:order-2 lg:w-[625px] lg:h-[886.9px] lg:ml-[20px]"
           />
 
           {/* Text Section */}
-          <div className="description lg:order-1 lg:ml-[20px]">
+          <div className="description lg:order-1 lg:ml-[15px]">
             {/* Main Problem Info */}
             <small className="text-[12px] text-[#FC9827] lg:mb-[6px] inline-block">
               {problem.small}
