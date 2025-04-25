@@ -99,9 +99,11 @@ const NonResidents = () => {
                           <button className="text-sm text-gray-400 font-semibold">Resident</button>
                         </Link>
                         
-                        <Link to="/sponsor/non-resident" className="icons flex items-center gap-2">
-                          <MdFamilyRestroom className="text-gray-400 w-5 h-5" />
-                          <button className="text-sm text-gray-400 font-semibold">Non-Resident</button>
+                        <Link to="/sponsor/non-resident" className="icons flex items-center gap-2 relative before:absolute before:block before:content-[''] 
+                before:w-[126.6px] before:h-[3px] before:bg-[#FC9827] 
+                before:z-10 before:left-0 before:top-[25px]">
+                          <MdFamilyRestroom className="text-[#3a3b36] w-5 h-5" />
+                          <button className="text-sm text-[#3a3b36] font-semibold">Non-Resident</button>
                         </Link>
                       </div>
                   </div>

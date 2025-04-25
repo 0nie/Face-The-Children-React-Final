@@ -99,9 +99,9 @@ const Residents = () => {
       
                   <div className="childCard-wrapper">
                       <div className="icon-wrapper flex gap-10 justify-center pb-2 mb-10">
-                        <Link to="../resident" className="icons flex items-center gap-2">
-                          <IoHome className="text-gray-400 w-5 h-5" />
-                          <button className="text-sm text-gray-400 font-semibold">Resident</button>
+                        <Link to="../resident" className="icons flex items-center gap-2 relative before:absolute before:block before:content-[''] before:w-[89.95px] before:h-[3px] before:bg-[#FC9827] before:z-10 before:left-0 before:top-[25px]">
+                          <IoHome className="text-[#3a3b36] w-5 h-5" />
+                          <button className="text-sm text-[#3a3b36] font-semibold">Resident</button>
                         </Link>
                                                 
                         <Link to="/sponsor/non-resident" className="icons flex items-center gap-2">
