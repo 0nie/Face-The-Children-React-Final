@@ -5,41 +5,42 @@ import { MdFamilyRestroom } from 'react-icons/md';
 import ModalSponsor from '../../partials/Modal/ModalSponsor'; // Import ModalSponsor
 import nonresidents from './nonresidents-data';
 import { Link } from 'react-router-dom';  // Import Link for navigation
+import ChildCard from './ChildCard';
 
 const NonResidents = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedName, setSelectedName] = useState('');
-  const [remainingAmount, setRemainingAmount] = useState(0);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [selectedName, setSelectedName] = useState('');
+  // const [remainingAmount, setRemainingAmount] = useState(0);
 
-  const maxDonation = 400; // Maximum donation amount for full sponsorship
+  // const maxDonation = 400; // Maximum donation amount for full sponsorship
 
-  const openModal = (name, sponsorPercentage) => {
-    setSelectedName(name);
-    const currentDonation = (sponsorPercentage / 100) * maxDonation;
-    const remaining = maxDonation - currentDonation;
-    setRemainingAmount(remaining);
-    setIsOpen(true);
-    document.body.style.overflow = 'hidden';
-  };
+  // const openModal = (name, sponsorPercentage) => {
+  //   setSelectedName(name);
+  //   const currentDonation = (sponsorPercentage / 100) * maxDonation;
+  //   const remaining = maxDonation - currentDonation;
+  //   setRemainingAmount(remaining);
+  //   setIsOpen(true);
+  //   document.body.style.overflow = 'hidden';
+  // };
 
-  const closeModal = () => {
-    setIsOpen(false);
-    document.body.style.overflow = 'auto';
-  };
+  // const closeModal = () => {
+  //   setIsOpen(false);
+  //   document.body.style.overflow = 'auto';
+  // };
 
   return (
     <div>
-      <section className="non-residents mt-[100px] lg:mt-[150px]">
+      {/* <section className="non-residents mt-[100px] lg:mt-[150px]">
         <div className="container max-w-[410px] px-2 py-14 mx-auto lg:max-w-[1300px]">
           <div className="residents-wrapper">
             <div className="icon-wrapper flex gap-10 justify-center pb-2 mb-10">
-              {/* Link to Resident Page */}
+          
               <Link to="../resident" className="icons flex items-center gap-2">
                 <IoHome className="text-gray-400 w-5 h-5" />
                 <button className="text-sm text-gray-400 font-semibold">Resident</button>
               </Link>
 
-              {/* Non-Resident Section */}
+             
               <div className="icons flex items-center gap-2 relative before:absolute before:block before:content-[''] 
                 before:w-[126.6px] before:h-[3px] before:bg-[#FC9827] 
                 before:z-10 before:left-0 before:top-[25px]">
@@ -86,15 +87,85 @@ const NonResidents = () => {
             </div>
           </div>
         </div>
+      </section> */}
+
+      <section className="ChildCard mt-[100px] lg:mt-[150px]">
+              <div className="container max-w-[410px] px-2 py-14 mx-auto lg:max-w-[1300px]">
+      
+                  <div className="childCard-wrapper">
+                      <div className="icon-wrapper flex gap-10 justify-center pb-2 mb-10">
+                        <Link to="../resident" className="icons flex items-center gap-2">
+                          <IoHome className="text-gray-400 w-5 h-5" />
+                          <button className="text-sm text-gray-400 font-semibold">Resident</button>
+                        </Link>
+                        
+                        <Link to="/sponsor/non-resident" className="icons flex items-center gap-2">
+                          <MdFamilyRestroom className="text-gray-400 w-5 h-5" />
+                          <button className="text-sm text-gray-400 font-semibold">Non-Resident</button>
+                        </Link>
+                      </div>
+                  </div>
+      
+                  <div className="child-wrapper flex flex-wrap flex-col gap-3 lg:flex-row lg:flex-wrap lg:justify-center">
+                  
+                    <ChildCard image ="/images/sponsor/trixie.jpg"
+                     name = "Trixie Mae N"
+                     sponsor = "37.50% - Sponsored"/>
+                    
+                    <ChildCard image ="/images/sponsor/danica.jpg"
+                     name = "Danica V"
+                     sponsor = "40.00% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/rosemae.jpg"
+                     name = "Rose Mae N"
+                     sponsor = "40.00% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/opt-rachelle.jpg"
+                     name = "Rachelle M"
+                     sponsor = "42.00% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/opt-don.jpg"
+                     name = "Richard T"
+                     sponsor = "45.00% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/marygrace.jpg"
+                     name = "Mary Grace V"
+                     sponsor = "50.00% — Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/eugene.jpg"
+                     name = "Eugene Lance D"
+                     sponsor = "52.50% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/opt-gladays.jpg"
+                     name = "Gladys T"
+                     sponsor = "57.50% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/julieann.jpg"
+                     name = "Julie ann"
+                     sponsor = "60.00% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/opt-mark.jpg"
+                     name = "Mark John B"
+                     sponsor = "85.00% - Sponsored"/>
+
+                     <ChildCard image ="/images/sponsor/opt-marian.jpg"
+                     name = "Marian Nhicole B"
+                     sponsor = "100.00% - Sponsored"/>
+                    
+
+                     
+                  </div>
+      
+              </div>
       </section>
 
       {/* ModalSponsor Component */}
-      <ModalSponsor 
+      {/* <ModalSponsor 
         isOpen={isOpen} 
         closeModal={closeModal} 
         selectedResident={selectedName} 
         remainingAmount={remainingAmount} 
-      />
+      /> */}
     </div>
   );
 };
