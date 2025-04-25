@@ -39,6 +39,9 @@ module.exports = {
           },
         },
       },
+      screens: {
+        'xs': '425px', // Add a custom 425px breakpoint
+      },
     },
   },
   plugins: [],

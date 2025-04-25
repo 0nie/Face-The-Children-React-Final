@@ -52,16 +52,18 @@ const Residents = () => {
                   <div className="card relative" key={index}>
                     <div className="frame">
                       <img src={item.image} alt={item.name} className="mx-auto w-[265px] h-[360px]" />
-                      <div className="info flex justify-between items-center mx-auto p-2 w-[265px] bg-[#3A3B364D] absolute left-[65px] lg:left-0 top-[302px] h-[58px]">
+                      <div
+                      className={`info flex justify-between items-center mx-auto p-2 w-[265px] bg-[#3A3B364D] absolute left-[65px] lg:left-0 
+                        top-[302px] h-[58px] transition-all duration-300 ease-in-out
+                        ${index === 2 ? 'xs:top-[280px] xs:h-[82px] xl:top-[280px] xl:h-[82px]' : ''}`}>
+
                         <div className="name-info">
                           <p className="text-white">{item.name}</p>
                          
-                          <Link to={`/system/${item.name}`} >
+                          <Link to={`/system/${item.id}`}>
                             <p className="text-sm text-[#FC9827]">View Info</p>
                           </Link>
-
-                          
-
+                        
 
                         </div>
                         <button

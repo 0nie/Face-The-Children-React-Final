@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from './Navigation'
 import Question from './Question'
-import Contact from './Contact'
+import Contact from '../../partials/Contact'
 import Appreciation from './Appreciation'
 import Footer from './Footer'
 

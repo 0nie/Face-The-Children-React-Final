@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from './Navigation'
-import Form from './Form'
-import Footer from './Footer'
+import Form from '../../partials/Form'
+import Footer from '../../partials/Footer'
 import Team from './Team'
 
 

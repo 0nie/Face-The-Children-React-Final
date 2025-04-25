@@ -8,15 +8,22 @@ import residentsData from './residents-data'; // Renamed for clarity
 import nonResidentsData from './nonresidents-data'; // Renamed for clarity
 
 const System = () => {
-  const { childName } = useParams();
+  const { childId } = useParams();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedResident, setSelectedResident] = useState('');
   const [remainingAmount, setRemainingAmount] = useState(0);
   
   const maxDonation = 400;
 
+  // Debugging: Log childId and combined data
+  console.log("childId:", childId);
+  console.log("Combined Data:", [...residentsData, ...nonResidentsData]);
+
   // Find the child by name from the combined data
-  const child = [...residentsData, ...nonResidentsData].find(item => item.name === childName);
+  const child = [...residentsData, ...nonResidentsData].find(item => item.id === childId);
+
+  // Debugging: Log the child object
+  console.log("Selected Child:", child);
 
   useEffect(() => {
     if (child) {
@@ -49,8 +56,8 @@ const System = () => {
       <Navigation />
       <section className="sponsorship-children">
         <div className="container px-2 max-w-[410px] mx-auto pb-4 pt-[150px] lg:pt-[150px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1100px] xl:max-w-[990px] xl:p-0 xl:pt-[150px]">
-          <div className="children-wrapper lg:flex lg:gap-5">
-            <div className="image-container flex flex-col items-center justify-center">
+          <div className="children-wrapper lg:flex lg:gap-5 ">
+            <div className="image-container flex flex-col items-center justify-start">
               <img src={child.image} alt={child.name} className="object-cover w-[265px] lg:w-[365px] h-[360px]" />
               <div className="relative w-[265px] h-[40px] mx-auto text-white bg-[#FFBD66] text-[16px] font-semibold overflow-hidden">
                 <div

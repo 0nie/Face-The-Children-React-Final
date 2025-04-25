@@ -43,7 +43,7 @@ function App() {
           <Route path="non-resident" element={<NonResidents />} />
         </Route>
 
-        <Route path="/system/:childName" element={<System />} />
+        <Route path="/system/:childId" element={<System />} />
 
 
 

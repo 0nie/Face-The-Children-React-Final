@@ -1,6 +1,7 @@
 import React from 'react'
 import Headings from '../../partials/Headings'
 
+
 const Appreciation = () => {
   return (
     <div>
